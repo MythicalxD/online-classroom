@@ -105,7 +105,7 @@ const ClassroomManagement: React.FC = () => {
   }
 
   return (
-    <div className="p-4 h-screen bg-gray-50 w-screen">
+    <div className="p-4 min-h-screen bg-gray-50 w-screen">
       <h2 className="text-xl font-semibold mb-4 text-black">
         {user.role === "teacher" ? "Manage Your Classrooms" : "Join a Classroom"}
       </h2>
@@ -166,13 +166,13 @@ const ClassroomManagement: React.FC = () => {
 
           {classrooms.length > 0 && (
             <div>
-              <h3 className="text-lg font-semibold mb-2">Joined Classrooms</h3>
+              <h3 className="text-lg font-semibold mb-2 text-black">Joined Classrooms</h3>
               <ul className="space-y-2">
                 {classrooms.map((classroom) => (
                   <li key={classroom.id} className="p-3 bg-white rounded shadow">
                     <p className="font-semibold text-black">{classroom.name}</p>
-                    <p>
-                      Created By: <span className="text-blue-500">{classroom.createdByName}</span>
+                    <p className="text-black" >
+                      Joined By: <span className="text-blue-500">{classroom.code}</span>
                     </p>
                   </li>
                 ))}

@@ -20,7 +20,7 @@ const Home: React.FC = () => {
     return (
         <div className="flex h-full bg-gray-100 w-screen">
             {/* Side Navigation */}
-        
+
 
             {/* Main Content */}
             <div className="flex-1 p-6">
@@ -52,13 +52,13 @@ const Home: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* Live Feed */}
                     <section className="bg-white rounded-lg shadow p-4">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Live Feed</h3>
+                        <h3 className="text-lg font-semibold text-gray-800 mb-4">All Live Chat</h3>
                         <LiveFeed user={user} />
                     </section>
 
                     {/* Assignments */}
                     <section className="bg-white rounded-lg shadow p-4">
-                        <h3 className="text-lg font-semibold text-gray-800 mb-4">Assignments</h3>
+                        <h3 className="text-lg font-semibold text-gray-800 mb-4">All Assignments</h3>
                         <Assignments user={user} />
                     </section>
 

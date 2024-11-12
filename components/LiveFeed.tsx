@@ -45,7 +45,7 @@ const LiveFeed: React.FC<LiveFeedProps> = ({ classroomId }) => {
 
   return (
     <div className="p-4 bg-white rounded shadow">
-      <h3 className="text-xl font-semibold mb-2">Live Feed</h3>
+      <h3 className="text-xl font-semibold mb-2 text-black ">Live Feed</h3>
       <div className="h-64 overflow-y-scroll border p-2 mb-2">
         {messages.map((msg, idx) => (
           <div key={idx} className="mb-1 text-black">

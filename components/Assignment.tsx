@@ -60,12 +60,15 @@ const Assignments: React.FC<AssignmentsProps> = ({ user }) => {
             {/* List of Assignments */}
             {assignments.length > 0 ? (
                 <ul className="mb-4">
-                    {assignments.map((assignment) => (
+                    {assignments.reverse().slice(5).map((assignment) => (
                         <li
                             key={assignment.id}
                             className="cursor-pointer mb-1 text-blue-600 hover:underline"
                         >
-                            {assignment.title} - {assignment.status}
+                            <a href='/assignment' >
+                                {assignment.title} - {assignment.status}
+                            </a>
+
                         </li>
                     ))}
                 </ul>

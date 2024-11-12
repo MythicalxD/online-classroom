@@ -8,7 +8,7 @@ const Live: React.FC = () => {
     const classroomId = 'classroom1'; // Replace with dynamic ID
 
     return (
-        <div className="p-4">
+        <div className="p-4 h-screen w-screen">
             <LiveFeed classroomId={classroomId} />
         </div>
     );

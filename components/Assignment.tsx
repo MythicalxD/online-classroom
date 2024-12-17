@@ -101,7 +101,7 @@ const Assignments: React.FC<AssignmentsProps> = ({ user }) => {
                         onChange={(e) => setStatus(e.target.value)}
                         className="mb-2 w-full p-2 border rounded text-black"
                     >
-                        <option value="unmarked">Unmarked</option>
+                        <option value="pending">Unmarked</option>
                         <option value="graded">Graded</option>
                     </select>
                     <button
